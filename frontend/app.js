@@ -30,6 +30,12 @@ app.post("/submit", async (req, res) => {
       body: new URLSearchParams(req.body),
     });
 
+    if (!response.ok) {
+      const text = await response.text();
+      console.error("Backend error response:", text);
+      return res.status(500).send("Backend failed");
+    }
+
     const result = await response.json();
 
     if (result.status === "success") {
