@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submission Successful</title>
+
+    <link rel="stylesheet" href="/css/success.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="success-card">
+        <h1>Submission Successful</h1>
+        <p class="subtitle">
+          Your details have been successfully received by our platform.
+        </p>
+
+        <div class="details">
+          <div class="row">
+            <span class="label">Full Name</span>
+            <span class="value"><%= name %></span>
+          </div>
+
+          <div class="row">
+            <span class="label">Email Address</span>
+            <span class="value"><%= email %></span>
+          </div>
+
+          <div class="row">
+            <span class="label">Phone Number</span>
+            <span class="value"><%= phone %></span>
+          </div>
+
+          <div class="row">
+            <span class="label">City</span>
+            <span class="value"><%= city %></span>
+          </div>
+
+          <div class="row message">
+            <span class="label">Message</span>
+            <p class="value"><%= message %></p>
+          </div>
+        </div>
+
+        <a href="/" class="btn">Submit Another Response</a>
+      </div>
+    </div>
+  </body>
+</html>
