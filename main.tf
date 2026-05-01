@@ -80,7 +80,7 @@ resource "aws_instance" "app_server" {
 
               # Clone your repo (IMPORTANT: change later)
               cd /home/ubuntu
-              git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git app
+              git clone https://github.com/Aakash070802/assign-8-terraform-part1.git app
 
               # Backend setup
               cd app/backend
