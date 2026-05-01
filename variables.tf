@@ -8,5 +8,6 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  description = "Existing AWS key pair name"
+  description = "EC2 key pair name"
+  default     = "flask-express-terraform-key"
 }
